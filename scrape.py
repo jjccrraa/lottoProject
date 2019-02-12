@@ -99,7 +99,7 @@ def game_select(game_name, result):
 				if j == "Megalotto 6/45":
 					return  i
 	else:
-		return "Game not found."
+		return "-----"
 
 
 #game = input()
