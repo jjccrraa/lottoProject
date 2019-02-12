@@ -2,8 +2,6 @@ import requests
 from bs4 import BeautifulSoup
 
 
-url = 'https://www.pcso.gov.ph/SearchLottoResult.aspx'
-
 # Returns the content of the table
 def get_contents(url):
 	# get the html of the url
@@ -104,15 +102,15 @@ def game_select(game_name, result):
 		return "Game not found."
 
 
-game = input()
-table = get_contents(url)
-td = relevant_results(table)
-grouped = grouper(td)
-lotto_game = game_select(game, grouped)
+#game = input()
+#table = get_contents(url)
+#td = relevant_results(table)
+#grouped = grouper(td)
+#lotto_game = game_select(game, grouped)
 
-print("Lotto Game: "+ lotto_game[0])
-print("Winning Combination: "+ lotto_game[1])
-print("Date: "+ lotto_game[2])
-print("Prize: "+ lotto_game[3])
-print("Winners: "+ lotto_game[4])
+#print("Lotto Game: "+ lotto_game[0])
+#print("Winning Combination: "+ lotto_game[1])
+#print("Date: "+ lotto_game[2])
+#print("Prize: "+ lotto_game[3])
+#print("Winners: "+ lotto_game[4])
 
