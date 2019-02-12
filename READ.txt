@@ -1,0 +1,9 @@
+to run ngrok:
+./ngrok http 5000 -bind-tls=true
+
+to run flask app:
+. venv/bin/activate
+python app.py
+
+to dev while using beautifulsoup:
+python3 -m venv env
